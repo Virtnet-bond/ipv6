@@ -3,6 +3,6 @@ dhclient -6
 echo "Acquire::ForceIPv4 "true";" > /etc/apt/apt.conf.d/99force-ipv4 
 ip6=$(curl ifconfig.me -6 -s) 
 echo  "---------------------------------------------------------------"
-echo "IPv6 Address: $ip6" 
+echo "Public IPv6 Address: $ip6" 
 echo  "---------------------------------------------------------------"
 echo ""
