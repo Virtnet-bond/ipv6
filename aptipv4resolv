@@ -1,0 +1,1 @@
+echo 'Acquire::ForceIPv4 'true';' > /etc/apt/apt.conf.d/99force-ipv4 && echo 'precedence ::ffff:0:0/96 100' > /etc/gai.conf 
