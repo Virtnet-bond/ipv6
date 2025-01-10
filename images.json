@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Ubuntu",
+    "templates": [
+      {
+        "name": "Ubuntu 18.04",
+        "vmid": 1200,
+        "link": "https://images.cdn.convoypanel.com/ubuntu/ubuntu-18-04-amd64.vma.zst"
+      },
+      {
+        "name": "Ubuntu 20.04",
+        "vmid": 1201,
+        "link": "https://images.cdn.convoypanel.com/ubuntu/ubuntu-20-04-amd64.vma.zst"
+      },
+      {
+        "name": "Ubuntu 22.04",
+        "vmid": 1202,
+        "link": "https://images.cdn.convoypanel.com/ubuntu/ubuntu-22-04-amd64.vma.zst"
+      },
+      {
+        "name": "Ubuntu 24.04",
+        "vmid": 1203,
+        "link": "https://images.cdn.convoypanel.com/ubuntu/ubuntu-24-04-amd64.vma.zst"
+      }
+    ]
+  },
+  {
+    "name": "Debian",
+    "templates": [
+      {
+        "name": "Debian 11",
+        "vmid": 1208,
+        "link": "https://images.cdn.convoypanel.com/debian/debian-11-amd64.vma.zst"
+      },
+      {
+        "name": "Debian 12",
+        "vmid": 1209,
+        "link": "https://images.cdn.convoypanel.com/debian/debian-12-amd64.vma.zst"
+      }
+    ]
+  }
+]
