@@ -1,0 +1,17 @@
+mkdir /gretunnels/
+tee -a /gretunnels/as214022-gre.sh <<EOF
+ip tunnel add as214022-gre mode gre remote 24.210.50.99 local 193.57.159.136 ttl 255
+ip link set as214022-gre up
+ip -6 a a fa45::2/64 dev as214022-gre
+EOF
+tee -a /etc/systemd/system/as214022gre.service
+[Unit]
+Description=AS214022 Transit
+After=network-online.target
+[Service]
+ExecStart=/gretunnels/as214022-gre.sh
+[Install]
+WantedBy=multi-user.target
+EOF
+systemctl enable as214022gre.service
+systemctl start as214022gre.service
